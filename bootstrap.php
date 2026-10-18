@@ -21,5 +21,5 @@ if(session_status()!==PHP_SESSION_ACTIVE){
  session_start();
  if($https)header('Strict-Transport-Security: max-age=31536000');
 }
-header("Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'");
+header("Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'");
 header('X-Permitted-Cross-Domain-Policies: none');
